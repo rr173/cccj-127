@@ -1,0 +1,18 @@
+{
+  "op": "not",
+  "child": {
+    "op": "and",
+    "children": [
+      {
+        "op": "ge",
+        "field_id": 1,
+        "value": -3
+      },
+      {
+        "op": "lt",
+        "field_id": 1,
+        "value": -3
+      }
+    ]
+  }
+}

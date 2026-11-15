@@ -1,0 +1,15 @@
+{
+  "op": "and",
+  "children": [
+    {
+      "op": "ge",
+      "field_id": 2,
+      "value": "京𠮷"
+    },
+    {
+      "op": "lt",
+      "field_id": 2,
+      "value": "京𠮸"
+    }
+  ]
+}

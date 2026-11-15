@@ -1,0 +1,25 @@
+{
+  "op": "and",
+  "children": [
+    {
+      "op": "or",
+      "children": [
+        {
+          "op": "lt",
+          "field_id": 1,
+          "value": -3
+        },
+        {
+          "op": "gt",
+          "field_id": 1,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "op": "eq",
+      "field_id": 2,
+      "value": "京𠮷"
+    }
+  ]
+}

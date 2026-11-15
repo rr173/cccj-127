@@ -1,0 +1,8 @@
+{
+  "op": "not",
+  "child": {
+    "op": "lt",
+    "field_id": 1,
+    "value": -3
+  }
+}
