@@ -1,0 +1,90 @@
+{
+  "data_before_template": {
+    "phase": "data",
+    "capture_line": 1
+  },
+  "send_after_revoke": {
+    "phase": "data",
+    "capture_line": 3
+  },
+  "revoke_unregistered": {
+    "phase": "template",
+    "capture_line": 1
+  },
+  "illegal_known_length": {
+    "phase": "template",
+    "capture_line": 1,
+    "field_ordinal": 0
+  },
+  "illegal_ipv4_length": {
+    "phase": "template",
+    "capture_line": 1
+  },
+  "field_length_zero": {
+    "phase": "template",
+    "capture_line": 1
+  },
+  "set_beyond_message": {
+    "phase": "set",
+    "capture_line": 2
+  },
+  "message_length_lies": {
+    "phase": "header",
+    "capture_line": 1
+  },
+  "extended_length_truncated": {
+    "phase": "data",
+    "capture_line": 2,
+    "field_ordinal": 1
+  },
+  "variable_payload_truncated": {
+    "phase": "data",
+    "capture_line": 2,
+    "field_ordinal": 1
+  },
+  "extended_length_below_255": {
+    "phase": "data",
+    "capture_line": 2,
+    "field_ordinal": 1
+  },
+  "nonzero_padding": {
+    "phase": "data",
+    "capture_line": 2
+  },
+  "four_byte_nonzero_tail": {
+    "phase": "data",
+    "capture_line": 2
+  },
+  "sequence_gap": {
+    "phase": "sequence",
+    "capture_line": 3
+  },
+  "sequence_template_only_counts_zero": {
+    "phase": "sequence",
+    "capture_line": 2
+  },
+  "last_line_bad": {
+    "phase": "header",
+    "capture_line": 3
+  },
+  "options_template_set": {
+    "phase": "set",
+    "capture_line": 1
+  },
+  "reserved_set_id": {
+    "phase": "set",
+    "capture_line": 1
+  },
+  "template_id_below_256": {
+    "phase": "template",
+    "capture_line": 1
+  },
+  "template_before_domain_definition": {
+    "phase": "data",
+    "capture_line": 2
+  },
+  "short_record_tail": {
+    "phase": "data",
+    "capture_line": 2
+  }
+}

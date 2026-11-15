@@ -1,0 +1,15 @@
+{"exporter_id":"exporter-1","transport_id":"transport-A","message_hex":"000a00606553f100000003e8000000070002001001000002000800040001000801000010c0000201ffffffffffffffff000200140100000300080004000c0004000200040100001cc0000202c63364010000000ac0000203c63364020000000b"}
+{"exporter_id":"exporter-1","transport_id":"transport-A","message_hex":"000a00206553f100000003eb0000000701000010cb007109cb00710a00000063"}
+{"exporter_id":"exporter-1","transport_id":"transport-B","message_hex":"000a00206553f100000001f40000000700020010010000020008000400020004"}
+{"exporter_id":"exporter-1","transport_id":"transport-B","message_hex":"000a00246553f100000001f400000007010000140a000001000000010a00000200000002"}
+{"exporter_id":"exporter-1","transport_id":"transport-A","message_hex":"000a00246553f100000000000000000900020014010000030008000400040001000b0002"}
+{"exporter_id":"exporter-1","transport_id":"transport-A","message_hex":"000a001b6553f10000000000000000090100000b0a000003061f90"}
+{"exporter_id":"exporter-1","transport_id":"transport-A","message_hex":"000a00186553f100000003ec000000070002000801000000"}
+{"exporter_id":"exporter-1","transport_id":"transport-A","message_hex":"000a00246553f100000003ec000000070002001401000003000800040098000800990008"}
+{"exporter_id":"exporter-1","transport_id":"transport-A","message_hex":"000a00246553f100000003ec000000070002001401000003000800040098000800990008"}
+{"exporter_id":"exporter-1","transport_id":"transport-A","message_hex":"000a00286553f100000003ec00000007010000180a0000010000018bcfe5687b0000018bcfe56a48"}
+{"exporter_id":"exporter-2","transport_id":"transport-A","message_hex":"000a00206553f100fffffffa000000070002001001000002000c000400020004"}
+{"exporter_id":"exporter-2","transport_id":"transport-A","message_hex":"000a00246553f100fffffffa00000007010000140a00000a000000010a00000b00000002"}
+{"exporter_id":"exporter-2","transport_id":"transport-A","message_hex":"000a00246553f100fffffffc00000007010000140a00000c000000030a00000d00000004"}
+{"exporter_id":"exporter-2","transport_id":"transport-A","message_hex":"000a00246553f100fffffffe00000007010000140a00000e000000050a00000f00000006"}
+{"exporter_id":"exporter-2","transport_id":"transport-A","message_hex":"000a001c6553f10000000000000000070100000c0a00001000000007"}
