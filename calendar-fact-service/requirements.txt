@@ -1,0 +1,2 @@
+# 本服务只使用 Python 3.11 标准库（zoneinfo / datetime / json / argparse 等），
+# 不依赖任何第三方包；系统需提供 IANA tzdata（Linux 通常内置 /usr/share/zoneinfo）。
