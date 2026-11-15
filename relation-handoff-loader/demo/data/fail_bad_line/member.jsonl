@@ -1,0 +1,7 @@
+{"key": ["T1", "M1"], "values": {"display_name": "成员一（已更新）", "alias": "alias-two", "score": 11, "vip": true}, "refs": {"manager": ["T1", "M2"], "org": ["ORG", "A"]}}
+{"key": ["T1", "M2"], "values": {"display_name": "成员二", "alias": "alias-one", "score": 20, "vip": false}, "refs": {"manager": ["T1", "M1"], "org": ["ORG", "A"]}}
+{"key": ["T1", "M4"], "values": {"display_name": "成员四（保留原样）", "alias": "alias-four", "score": 40, "vip": true}, "refs": {"manager": ["T1", "M1"], "org": ["ORG", "C"]}}
+{"key": ["T1", "M-NEW-A"], "values": {"display_name": "新成员A（负责人环）", "alias": "alias-new-a", "score": 9223372036854775807, "vip": false}, "refs": {"manager": ["T1", "M-NEW-B"], "org": ["ORG", "C"]}}
+{"key": ["T1", "M-NEW-B"], "values": {"display_name": "新成员B（负责人环）", "alias": "alias-new-b", "score": -9223372036854775808, "vip": null}, "refs": {"manager": ["T1", "M-NEW-A"], "org": ["ORG", "C"]}}
+{"key": ["T1", "a|b\"c,d"], "values": {"display_name": "复合键分量含分隔符与引号", "alias": "alias-pipe", "score": 0, "vip": null}, "refs": {"manager": null, "org": null}}
+{"key": ["T1", "BAD"], "values": {"display_name": "末尾坏行", alias: "alias-bad", "score": 1, "vip": null}, "refs": {"manager": null, "org": null}}

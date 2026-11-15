@@ -1,0 +1,2 @@
+{"key": ["P1", "R1"], "values": {"note": "任务一（改派给新成员B）"}, "refs": {"assignee": ["T1", "M-NEW-B"]}}
+{"key": ["P2", "R9"], "values": {"note": "新建任务，指向新成员A"}, "refs": {"assignee": ["T1", "M-NEW-A"]}}

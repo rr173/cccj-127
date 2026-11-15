@@ -1,0 +1,2 @@
+{"key": ["P1", "R1"], "values": {"note": "指向已删除成员 M3（只在旧库存在）"}, "refs": {"assignee": ["T1", "M3"]}}
+{"key": ["P2", "R9"], "values": {"note": "新建任务"}, "refs": {"assignee": ["T1", "M-NEW-A"]}}

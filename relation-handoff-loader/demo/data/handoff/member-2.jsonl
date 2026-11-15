@@ -1,0 +1,3 @@
+{"key": ["T1", "M-NEW-A"], "values": {"display_name": "新成员A（负责人环）", "alias": "alias-new-a", "score": 9223372036854775807, "vip": false}, "refs": {"manager": ["T1", "M-NEW-B"], "org": ["ORG", "C"]}}
+{"key": ["T1", "M-NEW-B"], "values": {"display_name": "新成员B（负责人环）", "alias": "alias-new-b", "score": -9223372036854775808, "vip": null}, "refs": {"manager": ["T1", "M-NEW-A"], "org": ["ORG", "C"]}}
+{"key": ["T1", "a|b\"c,d"], "values": {"display_name": "复合键分量含分隔符与引号", "alias": "alias-pipe", "score": 0, "vip": null}, "refs": {"manager": null, "org": null}}

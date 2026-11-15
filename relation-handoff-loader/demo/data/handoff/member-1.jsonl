@@ -1,0 +1,3 @@
+{"key": ["T1", "M1"], "values": {"display_name": "成员一（已更新）", "alias": "alias-two", "score": 11, "vip": true}, "refs": {"manager": ["T1", "M2"], "org": ["ORG", "A"]}}
+{"key": ["T1", "M2"], "values": {"display_name": "成员二", "alias": "alias-one", "score": 20, "vip": false}, "refs": {"manager": ["T1", "M1"], "org": ["ORG", "A"]}}
+{"key": ["T1", "M4"], "values": {"display_name": "成员四（保留原样）", "alias": "alias-four", "score": 40, "vip": true}, "refs": {"manager": ["T1", "M1"], "org": ["ORG", "C"]}}

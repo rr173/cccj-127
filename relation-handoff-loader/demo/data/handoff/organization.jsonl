@@ -1,0 +1,2 @@
+{"key": ["ORG", "A"], "values": {"legal_name": "甲组织（新名）", "tier": 5, "active": true}, "refs": {"contact": ["T1", "M-NEW-A"]}}
+{"key": ["ORG", "C"], "values": {"legal_name": "丙组织（新建）", "tier": 9, "active": true}, "refs": {"contact": ["T1", "M-NEW-A"]}}

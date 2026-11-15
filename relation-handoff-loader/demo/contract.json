@@ -1,0 +1,92 @@
+{
+  "schema": "handoff_demo",
+  "tables": [
+    {
+      "logical_name": "organization",
+      "table": "organization",
+      "natural_key": ["org_code", "org_tenant"],
+      "columns": [
+        {"name": "legal_name", "type": "text", "nullable": false},
+        {"name": "tier", "type": "bigint", "nullable": true},
+        {"name": "active", "type": "boolean", "nullable": false}
+      ],
+      "refs": [
+        {
+          "name": "contact",
+          "column": "contact_member",
+          "target": "member",
+          "nullable": false,
+          "deferrable": true,
+          "initially_deferred": true
+        }
+      ],
+      "unique_constraints": [
+        ["legal_name"]
+      ],
+      "id_sequence": "organization_id_seq"
+    },
+    {
+      "logical_name": "member",
+      "table": "member",
+      "natural_key": ["tenant_id", "member_code"],
+      "columns": [
+        {"name": "display_name", "type": "text", "nullable": false},
+        {"name": "alias", "type": "text", "nullable": false},
+        {"name": "score", "type": "bigint", "nullable": false},
+        {"name": "vip", "type": "boolean", "nullable": true}
+      ],
+      "refs": [
+        {
+          "name": "manager",
+          "column": "manager_id",
+          "target": "member",
+          "nullable": true,
+          "deferrable": true,
+          "initially_deferred": true
+        },
+        {
+          "name": "org",
+          "column": "org_id",
+          "target": "organization",
+          "nullable": true,
+          "deferrable": true,
+          "initially_deferred": true
+        }
+      ],
+      "unique_constraints": [
+        ["alias"]
+      ],
+      "id_sequence": "member_id_seq"
+    },
+    {
+      "logical_name": "assignment",
+      "table": "assignment",
+      "natural_key": ["project_key", "role_code"],
+      "columns": [
+        {"name": "note", "type": "text", "nullable": true}
+      ],
+      "refs": [
+        {
+          "name": "assignee",
+          "column": "member_id",
+          "target": "member",
+          "nullable": false,
+          "deferrable": true,
+          "initially_deferred": true
+        }
+      ],
+      "unique_constraints": [],
+      "id_sequence": "assignment_id_seq"
+    },
+    {
+      "logical_name": "weird_named",
+      "table": "weird 名.表 \"x\"",      "natural_key": ["kc"],
+      "columns": [
+        {"name": "label", "type": "text", "nullable": true}
+      ],
+      "refs": [],
+      "unique_constraints": [],
+      "id_sequence": "weird 名 表_id_seq"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# 本地离线 PostgreSQL 演示集群（运行期产物，不入库）
+.demo-pgdata/
+.demo-pgsocket/
+
+# 测试运行期生成的修正输入与临时契约
+demo/data/fix_*/
+demo/data/cli_contract_*.json
+demo/data/_verify_shuffled_member.jsonl
+demo/data/handoff/empty_assignment.jsonl

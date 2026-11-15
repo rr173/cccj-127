@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "relation-handoff-loader"
+version = "1.0.0"
+description = "把一次多表整表交接原子写进已有 PostgreSQL 仓库的关系装载工具"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["psycopg[binary]>=3.2"]
+
+[project.scripts]
+handoff-load = "handoff.cli:main"
+
+[tool.setuptools]
+packages = ["handoff"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
