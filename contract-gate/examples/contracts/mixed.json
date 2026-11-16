@@ -1,0 +1,18 @@
+{
+  "$id": "https://acme.example/schemas/mixed.json",
+  "type": "object",
+  "required": ["id"],
+  "properties": {
+    "id": {"type": "integer"},
+    "big": {"type": "integer"},
+    "amount": {"const": 9007199254740993},
+    "名称": {"type": "string"},
+    "escAped": {"type": "boolean"},
+    "obj": {
+      "type": "object",
+      "properties": {"id": {"type": "string"}},
+      "unevaluatedProperties": false
+    }
+  },
+  "unevaluatedProperties": false
+}

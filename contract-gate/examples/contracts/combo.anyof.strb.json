@@ -1,0 +1,9 @@
+{
+  "$id": "https://acme.example/schemas/combo.anyof.strb.json",
+  "type": "object",
+  "anyOf": [
+    {"required": ["a"], "properties": {"a": {"type": "integer"}}},
+    {"required": ["b"], "properties": {"b": {"type": "string"}}}
+  ],
+  "unevaluatedProperties": false
+}

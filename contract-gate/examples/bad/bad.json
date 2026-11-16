@@ -1,0 +1,6 @@
+{
+  "$id": "https://acme.example/schemas/bad.json",
+  "type": "object",
+  "minimum": 5,
+  "properties": {"a": {"$ref": "missing.json#/$defs/nope"}}
+}

@@ -1,0 +1,12 @@
+{"id":"A","kind":"order"}
+{"id":"D","kind":"order"}
+{"id":"B","kind":"return"}
+{"id":"B","kind":"return","reason":"damaged"}
+{"id":"A","kind":"order","reason":null}
+{"id":"A","kind":"order","reason":"oops"}
+{"id":"C","kind":"order","discount":0.5}
+{"id":"C","kind":"order","discount":0.5,"currency":"CNY"}
+{"id":"C","kind":"order","discount":0.5,"currency":"USD"}
+{"id":"A","kind":"order","extra":1}
+{"id":"A","kind":"order","route":"R1","tag":"t1","child":{"name":"n1","children":[{"name":"n2","children":[]}]}}
+{"id":"A","kind":"order","child":{"name":"n1","children":[{"name":"n2","bogus":true}]}}

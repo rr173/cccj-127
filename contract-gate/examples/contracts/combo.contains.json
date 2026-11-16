@@ -1,0 +1,7 @@
+{
+  "$id": "https://acme.example/schemas/combo.contains.json",
+  "type": "array",
+  "contains": {"type": "integer"},
+  "minContains": 1,
+  "unevaluatedItems": false
+}

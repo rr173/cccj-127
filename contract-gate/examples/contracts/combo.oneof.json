@@ -1,0 +1,9 @@
+{
+  "$id": "https://acme.example/schemas/combo.oneof.json",
+  "type": "object",
+  "oneOf": [
+    {"required": ["a"], "properties": {"a": {"type": "integer"}}},
+    {"required": ["b"], "properties": {"b": {"type": "integer"}}}
+  ],
+  "unevaluatedProperties": false
+}

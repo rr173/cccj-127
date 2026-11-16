@@ -1,0 +1,9 @@
+{
+  "$id": "https://acme.example/schemas/common.json",
+  "$defs": {
+    "idCode": {
+      "type": "string",
+      "description": "供应商单据编号"
+    }
+  }
+}

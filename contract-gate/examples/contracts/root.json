@@ -1,0 +1,38 @@
+{
+  "$id": "https://acme.example/schemas/root.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "供应商来件主契约（演示组合覆盖）",
+  "type": "object",
+  "required": ["id", "kind"],
+  "properties": {
+    "id": {"$ref": "common.json#/$defs/idCode", "enum": ["A", "B", "C"]},
+    "kind": {"enum": ["order", "return"]},
+    "route": {"$ref": "#/$defs/a~1b"},
+    "tag": {"$ref": "#/$defs/m~0n"},
+    "child": {"$ref": "node.json"}
+  },
+  "if": {"properties": {"kind": {"const": "return"}}, "required": ["kind"]},
+  "then": {"required": ["reason"], "properties": {"reason": {"type": "string"}}},
+  "else": {"properties": {"reason": {"type": "null"}}},
+  "dependentSchemas": {
+    "discount": {
+      "required": ["currency"],
+      "properties": {"discount": {"type": "number"}, "currency": {"const": "CNY"}}
+    }
+  },
+  "unevaluatedProperties": false,
+  "$defs": {
+    "a/b": {"type": "string"},
+    "m~n": {"type": "string"},
+    "node": {
+      "$id": "node.json",
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {"type": "string"},
+        "children": {"type": "array", "items": {"$ref": "node.json"}}
+      },
+      "unevaluatedProperties": false
+    }
+  }
+}

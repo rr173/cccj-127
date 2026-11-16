@@ -1,0 +1,38 @@
+{
+  "unevaluatedProperties": false,
+  "dependentSchemas": {
+    "discount": {
+      "properties": {"currency": {"const": "CNY"}, "discount": {"type": "number"}},
+      "required": ["currency"]
+    }
+  },
+  "else": {"properties": {"reason": {"type": "null"}}},
+  "then": {"properties": {"reason": {"type": "string"}}, "required": ["reason"]},
+  "if": {"required": ["kind"], "properties": {"kind": {"const": "return"}}},
+  "properties": {
+    "child": {"$ref": "node-shuffled.json"},
+    "tag": {"$ref": "#/$defs/m~0n"},
+    "route": {"$ref": "#/$defs/a~1b"},
+    "kind": {"enum": ["order", "return"]},
+    "id": {"enum": ["A", "B", "C"], "$ref": "common.json#/$defs/idCode"}
+  },
+  "required": ["id", "kind"],
+  "type": "object",
+  "$defs": {
+    "node": {
+      "$id": "node-shuffled.json",
+      "unevaluatedProperties": false,
+      "properties": {
+        "children": {"items": {"$ref": "node-shuffled.json"}, "type": "array"},
+        "name": {"type": "string"}
+      },
+      "required": ["name"],
+      "type": "object"
+    },
+    "m~n": {"type": "string"},
+    "a/b": {"type": "string"}
+  },
+  "title": "供应商来件主契约（关键字顺序打乱，语义应与 root.json 完全一致）",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://acme.example/schemas/root.shuffled.json"
+}

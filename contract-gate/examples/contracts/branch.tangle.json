@@ -1,0 +1,17 @@
+{
+  "$id": "https://acme.example/schemas/branch.tangle.json",
+  "type": "object",
+  "anyOf": [
+    {
+      "required": ["x"],
+      "properties": {
+        "x": {"type": "object", "required": ["deep"], "properties": {"deep": {"const": 1}}}
+      }
+    },
+    {
+      "required": ["x"],
+      "properties": {"x": {"type": "object"}}
+    }
+  ],
+  "unevaluatedProperties": false
+}
